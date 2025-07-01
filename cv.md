@@ -2,7 +2,7 @@
 
 _Email: **Avikspa@mail.ru**_
 
-__Belarus, Minsk.  30 years__
+__Belarus, Minsk.  31 years__
 
 __Education__: _Higher, Institute of Entrepreneurship, Faculty of Economics and Management_
 
@@ -18,3 +18,4 @@ __Knowledge of English__: _I read/understand 50%, mostly Google translate_
 
 __Discord nickname__: _Alexandr Bogdanov (@avikspa),  ID: 305873224183447554_
 
+![photo](/iam.jpg)
