@@ -563,8 +563,13 @@ font-size: 1.5rem;
 .main-right-third > h2,
 .main-right-fourth > h2 {
   padding-bottom: 30px;
-  color: #E8C8BF; /* Теперь все h2 будут этого цвета */
+  color: #E8C8BF;
   font-weight: 300;
+}
+
+.main-right-third,
+.main-right-fourth{
+  padding-bottom: 50px;
 }
 
 .education-time, .experience-projects {
