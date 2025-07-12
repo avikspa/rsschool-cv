@@ -452,7 +452,6 @@ font-size: 1.5rem;
   background: var(--color-gradient);
 }
 
-/* Изначально показываем Skills */
 #skills-content {
   display: block;
   animation: fadeIn 1s ease;
@@ -462,7 +461,6 @@ font-size: 1.5rem;
   display: none;
 }
 
-/* При активации Tools */
 #tools:target ~ .proficiencies-container .active-bg {
   transform: translateX(100%);
 }
@@ -480,7 +478,6 @@ font-size: 1.5rem;
   color: #000;
 }
 
-/* При активации Skills */
 #skills:target ~ .proficiencies-container .active-bg {
   transform: translateX(0);
 }
