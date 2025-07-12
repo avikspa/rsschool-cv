@@ -15,9 +15,8 @@ body {
   overflow-x: hidden;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
-  border: 1px solid red;
   width: 100vw;
-  height: 100vh;
+  min-height: 100%;
   background: linear-gradient(
     180deg,
     rgba(5, 5, 10, 1) 0%,
@@ -149,23 +148,24 @@ html {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  border-top: 5px solid transparent;
+  border-image: radial-gradient(rgba(238, 174, 202, 1) 0%,rgb(0, 17, 37) 100%) 10;
 }
 .link-button {
   height: 40px;
   width: 190px;
-  background-color: #BCB5DB;
-  border-radius: 40px;
   padding: 5px;
-  transition: all 0.5s ease-in-out;
+  padding-top: 25px;
+  font-size: 1.5rem;
+  color: #E8C8BF;
+  text-align: center;
 }
-.link-button:hover {
-  background: var(--color-gradient);
-  border-radius: 15px;
-  box-shadow: 0 5px 10px rgba(255, 231, 231, 0.2);
-  color: var(--color-gradient);
+.link-button>p {
+font-size: 1.5rem;
 }
 
 .link-social {
+  padding-top: 25px;
   display: flex;
   align-items: center;
 }
@@ -196,13 +196,15 @@ html {
   margin-top: 50px;
   display: flex;
   flex-direction: row;
-  border: 1px solid #E8C8BF;
 }
 .main-left {
+  padding-top: 25px;
   flex: 1;
-  border: 1px solid rgb(255, 198, 198);
+  border-top: 5px solid transparent;
+  border-image: radial-gradient(rgba(238, 174, 202, 1) 0%,rgb(0, 17, 37) 100%) 10;
 }
 .proficiencies > h1 {
+  font-weight: 300;
   font-size: 1.5rem;
   color: #E8C8BF;
   margin-bottom: 1rem;
@@ -501,66 +503,64 @@ html {
   to { opacity: 1; }
 }
 
-/* .main-right {
-
-  flex: 2;
-  border: 1px solid rgb(255, 198, 198);
-}
-.columns-container {
-  display: flex;
-}
-
-.main-right > h2 {
-  font-size: 1.5rem;
-  color: #E8C8BF;
-  text-align: center;
-}
-
-.main-right-first {
-  display: flex;
-  flex-direction: row;
-  border: 1px solid #E8C8BF;
-  flex: 1;
-}
-
-.main-right-second {
-  display: flex;
-  flex-direction: row;
-  border: 1px solid #E8C8BF;
-  flex: 1;
-} */
-
 .main-right {
+  padding-top: 25px;
   flex: 2;
-  border: 1px solid rgb(255, 198, 198);
+  border-top: 8px solid transparent;
+  border-image: radial-gradient(rgba(238, 174, 202, 1) 0%,rgb(0, 17, 37) 100%) 10;
   display: flex;
   flex-direction: column;
 }
+
 .columns-container {
   display: flex;
 }
-.main-right > h2 {
+.columns-pair {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-right > p {
   font-size: 1.5rem;
-  color: #E8C8BF;
+  color:#E8C8BF;
   text-align: center;
   width: 100%;
   margin: 0 auto;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
+}
+.main-right > h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 .main-right-first,
-.main-right-second {
-  color: white;
+.main-right-second,
+.main-right-third,
+.main-right-fourth {
+  padding-top: 25px;
+  color:#ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #E8C8BF;
+  border-top: 5px solid transparent;
+  border-image: radial-gradient(rgba(238, 174, 202, 1) 0%,rgb(0, 17, 37) 100%) 10;
   flex: 1;
   text-align: center;
 }
 
-.main-right-first>h2, .main-right-second>h2 {
+.main-right-first > h2,
+.main-right-second > h2,
+.main-right-third > h2,
+.main-right-fourth > h2 {
   padding-bottom: 30px;
+  color: #E8C8BF; /* Теперь все h2 будут этого цвета */
+  font-weight: 300;
 }
 
 .education-time, .experience-projects {
@@ -572,6 +572,40 @@ html {
   color:#E8C8BF;
 }
 
-.education-name, .experience-name {
-  margin-bottom: 5px;
+.code {
+  background: #2d2d2d;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+
+.code-header {
+  background: #333;
+  padding: 10px 15px;
+  border-bottom: 1px solid #444;
+}
+
+.code-header a {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.code-header a:hover {
+  color: #E8C8BF;
+}
+
+pre {
+  margin: 0;
+  padding: 15px;
+  color: #f8f8f2;
+}
+
+.code-footer {
+  background: #333;
+  padding: 8px 15px;
+  font-size: 0.7em;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
